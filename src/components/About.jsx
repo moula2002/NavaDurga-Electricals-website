@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import PageHeader from './PageHeader';
 import aboutImg from '../assets/about_engineer_1789710446645.png';
 import bgImg from '../assets/about_engineer_1789710446645.png';
+import ceoImg from '../assets/CEO Chethan.jpeg';
+import techDirectorImg from '../assets/Technical Director.jpeg';
 
 
 export default function About() {
@@ -17,6 +19,84 @@ export default function About() {
       <PageHeader title="About Us" breadcrumb="About Us" bgImage={bgImg} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Leadership Team */}
+        <div className="mb-24">
+          <div className="text-center mb-12">
+            <h4 className="text-3xl font-black text-slate-900 font-['Plus_Jakarta_Sans']">Meet Our Leadership</h4>
+            <p className="text-sm text-slate-600 mt-3 max-w-2xl mx-auto leading-relaxed">
+              Guided by visionaries with extensive industry experience, our leadership team ensures every project meets the highest standards of technical excellence, client satisfaction, and safety.
+            </p>
+          </div>
+          
+          <div className="space-y-20 max-w-5xl mx-auto">
+            {/* CEO Profile */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="flex flex-col md:flex-row items-center gap-8 md:gap-14"
+            >
+              <div className="w-full md:w-2/5 shrink-0">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] group border-4 border-white">
+                  <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
+                  <img 
+                    src={ceoImg} 
+                    alt="Chethan - CEO" 
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                </div>
+              </div>
+              <div className="w-full md:w-3/5 space-y-4">
+                <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100 text-[10px] font-bold tracking-widest uppercase mb-1">
+                  Chief Executive Officer
+                </div>
+                <h5 className="text-3xl md:text-4xl font-black text-slate-900 font-['Plus_Jakarta_Sans']">Mr. Chethan</h5>
+                <div className="w-16 h-1 bg-blue-600 rounded-full my-4"></div>
+                <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                  With a visionary approach to the electrical contracting industry, Chethan has steered Navadurga Electricals toward becoming a highly trusted Govt. Class I Contractor. 
+                </p>
+                <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                  His leadership heavily focuses on integrating modern innovation, maximizing client satisfaction, and ensuring uncompromised safety standards across all projects. Under his guidance, the company has scaled new heights in delivering large-scale infrastructure deployments.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Technical Director Profile */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-14"
+            >
+              <div className="w-full md:w-2/5 shrink-0">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] group border-4 border-white">
+                  <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
+                  <img 
+                    src={techDirectorImg} 
+                    alt="Naveen Kumar - Technical Director" 
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                </div>
+              </div>
+              <div className="w-full md:w-3/5 space-y-4 md:text-right flex flex-col md:items-end">
+                <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100 text-[10px] font-bold tracking-widest uppercase mb-1">
+                  Technical Director
+                </div>
+                <h5 className="text-3xl md:text-4xl font-black text-slate-900 font-['Plus_Jakarta_Sans']">Mr. Naveen Kumar</h5>
+                <div className="w-16 h-1 bg-blue-600 rounded-full my-4"></div>
+                <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                  Spearheading our engineering and operational excellence, Naveen brings profound technical expertise to every project. He oversees the intricate technical requirements of massive industrial installations.
+                </p>
+                <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                  He ensures that all MEP and electrical deployments are executed with absolute precision, strict regulatory compliance, and maximum efficiency. His hands-on approach guarantees that quality control is maintained at every level of execution.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
           {/* Left Text Block */}
           <motion.div 

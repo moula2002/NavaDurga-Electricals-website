@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PageHeader from './PageHeader';
-import bgImg from '../assets/media__1789709988698.png';
+import bgImg from '../assets/building_facade_1789710711412.png';
 import imgSubstationPanel from '../assets/gallery/ht_substation_panel.jpg';
-import imgIndustrialWiring from '../assets/gallery/industrial_wiring.jpg';
+import imgIndustrialWiring from '../assets/projects/facility_team.jpg';
 import imgCpvcPiping from '../assets/gallery/cpvc_piping.jpg';
 import imgHvacDucting from '../assets/gallery/hvac_mep_ducting.jpg';
 import imgSiteInspection from '../assets/gallery/site_inspection.jpg';

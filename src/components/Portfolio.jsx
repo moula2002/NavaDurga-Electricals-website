@@ -9,7 +9,7 @@ import imgInstitutional from '../assets/projects/institutional_project.jpg';
 import imgSubstation from '../assets/projects/ht_substation.jpg';
 import imgMep from '../assets/projects/mep_installation.jpg';
 import imgPlumbing from '../assets/projects/plumbing_work.jpg';
-import imgFacility from '../assets/projects/facility_management.jpg';
+import imgFacility from '../assets/projects/facility_management2.jpg';
 
 
 export default function Portfolio({ onSelectProject }) {

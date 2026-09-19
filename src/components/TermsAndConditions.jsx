@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeader from './PageHeader';
-import bgImg from '../assets/media__1789709988698.png';
+import bgImg from '../assets/building_facade_1789710711412.png';
 
 export default function TermsAndConditions() {
   return (

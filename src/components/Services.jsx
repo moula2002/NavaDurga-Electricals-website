@@ -9,6 +9,7 @@ import imgPlumbing from '../assets/plumbing_pipes_1789710473426.png';
 import imgMgmt from '../assets/service_mgmt.png';
 import imgDesign from '../assets/service_design.png';
 import imgSubstation from '../assets/substation_image_1789710679202.png';
+import imgFacilityTeam from '../assets/projects/facility_team.jpg';
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState('all');
@@ -68,7 +69,7 @@ export default function Services() {
       category: 'facility_mgmt',
       title: 'M.E.P. Facility Management',
       subtitle: 'Complete Building Utilities & Infrastructure Management',
-      image: imgSubstation,
+      image: imgFacilityTeam,
       icon: Building2,
       path: '/services/facility-management',
       features: ['Building Management Systems', 'On-Site Engineering Staff', 'Power Quality Optimization']
@@ -89,7 +90,7 @@ export default function Services() {
       )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         {/* Header Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -115,7 +116,7 @@ export default function Services() {
         </motion.div>
 
         {/* Tab Navigation Line */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -129,11 +130,10 @@ export default function Services() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`pb-4 px-1 text-sm font-semibold transition-colors whitespace-nowrap border-b-2 ${
-                    isActive
+                  className={`pb-4 px-1 text-sm font-semibold transition-colors whitespace-nowrap border-b-2 ${isActive
                       ? 'border-blue-600 text-blue-600 font-bold'
                       : 'border-transparent text-slate-500 hover:text-slate-800'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
