@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="55" fill="#8B2500" stroke="#D4A017" stroke-width="3"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#D4A017" stroke-width="1.5"/>
+  <text x="60" y="45" text-anchor="middle" font-family="serif" font-size="9" fill="#D4A017" font-weight="bold">??????? ??????</text>
+  <text x="60" y="58" text-anchor="middle" font-family="serif" font-size="14" fill="#FFD700" font-weight="bold">?</text>
+  <text x="60" y="73" text-anchor="middle" font-family="serif" font-size="8" fill="#D4A017" font-weight="bold">GOVT OF</text>
+  <text x="60" y="83" text-anchor="middle" font-family="serif" font-size="8" fill="#D4A017" font-weight="bold">KARNATAKA</text>
+</svg>

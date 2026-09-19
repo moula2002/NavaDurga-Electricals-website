@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="55" fill="#00264d" stroke="#4fc3f7" stroke-width="3"/>
+  <circle cx="60" cy="60" r="46" fill="none" stroke="#4fc3f7" stroke-width="1"/>
+  <polygon points="60,25 70,50 95,50 75,65 83,90 60,75 37,90 45,65 25,50 50,50" fill="#4fc3f7" opacity="0.9"/>
+  <circle cx="60" cy="58" r="8" fill="#00264d" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="60" y="105" text-anchor="middle" font-family="Arial" font-size="9" fill="#4fc3f7" font-weight="bold">DRDO</text>
+</svg>

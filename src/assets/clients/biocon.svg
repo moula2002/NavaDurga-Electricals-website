@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 70">
+  <circle cx="25" cy="35" r="12" fill="none" stroke="#0097a7" stroke-width="3"/>
+  <circle cx="45" cy="35" r="12" fill="none" stroke="#0097a7" stroke-width="3"/>
+  <line x1="13" y1="35" x2="57" y2="35" stroke="#0097a7" stroke-width="2"/>
+  <text x="75" y="44" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#0097a7">Biocon</text>
+</svg>
