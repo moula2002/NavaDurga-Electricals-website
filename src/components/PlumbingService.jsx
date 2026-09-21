@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeader from './PageHeader';
-import plumbingImg from '../assets/plumbing_pipes_1789710473426.png';
+import plumbingImg from '../assets/gallery/plumbing_system.png';
 import bgImg from '../assets/plumbing_pipes_1789710473426.png';
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeader from './PageHeader';
-import substationImg from '../assets/substation_image_1789710679202.png';
+import substationImg from '../assets/gallery/electrical_works.png';
 import bgImg from '../assets/service_electrification.png';
 
 

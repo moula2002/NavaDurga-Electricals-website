@@ -11,7 +11,10 @@ import imgTransformer from '../assets/gallery/transformer_testing.jpg';
 import imgHydroPumps from '../assets/gallery/hydro_pumps.jpg';
 import imgBlueprints from '../assets/gallery/mep_blueprints.jpg';
 import imgCableLaying from '../assets/gallery/cable_laying.jpg';
-
+import imgFacilityManagement from '../assets/gallery/facility_management.png';
+import imgMepSystem from '../assets/gallery/mep_system.png';
+import imgElectricalWorks from '../assets/gallery/electrical_works.png';
+import imgPlumbingSystem from '../assets/gallery/plumbing_system.png';
 
 export default function Gallery() {
   const [activeTab, setActiveTab] = useState('all');
@@ -36,6 +39,10 @@ export default function Gallery() {
     { id: 8, title: 'Building Hydro-Pneumatic Pumps', category: 'plumbing', image: imgHydroPumps },
     { id: 9, title: 'MEP Engineering Blueprints', category: 'mep', image: imgBlueprints },
     { id: 10, title: 'Commercial Fitout Cable Laying', category: 'site', image: imgCableLaying },
+    { id: 11, title: 'Commercial Facility Management', category: 'team', image: imgFacilityManagement },
+    { id: 12, title: 'Advanced MEP Systems', category: 'mep', image: imgMepSystem },
+    { id: 13, title: 'Industrial Electrical Works', category: 'electrical', image: imgElectricalWorks },
+    { id: 14, title: 'Precision Plumbing System', category: 'plumbing', image: imgPlumbingSystem },
   ];
 
   const filteredItems = activeTab === 'all'

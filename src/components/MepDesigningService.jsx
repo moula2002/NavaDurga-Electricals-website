@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeader from './PageHeader';
-import mepBlueprintImg from '../assets/mep_blueprint_1789710498568.png';
+import mepBlueprintImg from '../assets/gallery/mep_system.png';
 import bgImg from '../assets/mep_blueprint_1789710498568.png';
 
 
