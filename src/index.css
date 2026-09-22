@@ -215,3 +215,11 @@
 .swiper-button-prev:hover::after {
   color: #002f6c;
 }
+
+/* Hide Swiper arrows on mobile screens for better UX */
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}

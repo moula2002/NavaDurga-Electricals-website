@@ -123,13 +123,13 @@ export default function Banner({ onOpenQuoteModal }) {
       </Swiper>
 
       {/* Bottom Dark Blue Metrics Bar */}
-      <div className="relative z-20 bg-[#002f6c] text-white py-8 border-t border-[#001f4d]">
+      <div className="relative z-20 bg-[#002f6c] text-white py-6 sm:py-8 border-t border-[#001f4d]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
             {stats.map((stat, idx) => (
-              <div key={idx} className="flex flex-col items-center justify-center space-y-2">
-                <span className="text-3xl sm:text-4xl font-black tracking-tight">{stat.value}</span>
-                <span className="text-xs sm:text-sm text-sky-200 font-bold uppercase tracking-wider">{stat.label}</span>
+              <div key={idx} className="flex flex-col items-center justify-center space-y-1.5 sm:space-y-2">
+                <span className="text-2xl sm:text-4xl font-black tracking-tight">{stat.value}</span>
+                <span className="text-[11px] sm:text-sm text-sky-200 font-bold uppercase tracking-wider">{stat.label}</span>
               </div>
             ))}
           </div>
