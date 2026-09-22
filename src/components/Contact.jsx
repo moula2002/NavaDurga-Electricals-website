@@ -72,13 +72,13 @@ export default function Contact() {
             </div>
 
             <div className="space-y-3.5 text-xs font-semibold text-slate-700">
-              <a href="tel:7338559119" className="flex items-center gap-3 p-3.5 bg-white rounded-xl border border-slate-200 hover:border-blue-500 transition-colors shadow-sm">
+              <a href="tel:7338591198" className="flex items-center gap-3 p-3.5 bg-white rounded-xl border border-slate-200 hover:border-blue-500 transition-colors shadow-sm">
                 <div className="w-9 h-9 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
                   <PhoneCallIcon className="w-4 h-4 text-blue-600" />
                 </div>
                 <div>
                   <div className="text-[10px] text-slate-400 font-bold uppercase">Call Us Directly</div>
-                  <div className="text-sm font-black text-slate-900">7338559119</div>
+                  <div className="text-sm font-black text-slate-900">+91 73385 91198</div>
                 </div>
               </a>
 

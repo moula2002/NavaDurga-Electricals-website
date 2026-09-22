@@ -61,11 +61,11 @@ export default function DetailModal({ isOpen, onClose, data, type }) {
           </div>
           <div className="flex items-center gap-2">
             <a
-              href="tel:7338559119"
+              href="tel:7338591198"
               className="px-3.5 py-2 rounded-xl bg-blue-600 text-white text-xs font-bold flex items-center gap-1.5 shadow-sm hover:bg-blue-700 transition-colors"
             >
               <PhoneCallIcon className="w-3.5 h-3.5" />
-              <span>7338559119</span>
+              <span>73385 91198</span>
             </a>
             <a
               href="https://wa.me/917349034720"

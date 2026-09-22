@@ -110,6 +110,38 @@
   animation: sparkLightning 2.5s ease-in-out infinite;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -126,4 +158,60 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #0369a1;
+}
+
+/* Swiper Customizations */
+:root {
+  --swiper-navigation-size: 18px;
+  --swiper-theme-color: #00a8e8;
+  --swiper-navigation-color: #111111;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #ffffff;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50%;
+  border: 3px solid #111111;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next {
+  right: 24px !important;
+  top: 60% !important;
+}
+
+.swiper-button-prev {
+  left: 24px !important;
+  top: 60% !important;
+}
+
+/* Use chevron icon matching the reference image */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-family: 'swiper-icons';
+  font-size: 14px !important;
+  font-weight: 900;
+  color: #111111;
+  letter-spacing: 0;
+  line-height: 1;
+  transition: color 0.25s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #ffffff;
+  border-color: #002f6c;
+  transform: scale(1.08);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: #002f6c;
 }

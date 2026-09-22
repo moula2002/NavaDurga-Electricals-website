@@ -28,11 +28,11 @@ export default function CardBanner({ onOpenQuoteModal }) {
         {/* Quick Phone Action Buttons */}
         <div className="flex items-center gap-3">
           <a
-            href="tel:7338559119"
+            href="tel:7338591198"
             className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-all text-xs font-bold shadow-sm"
           >
             <PhoneCallIcon className="w-3.5 h-3.5" />
-            <span>7338559119</span>
+            <span>73385 91198</span>
           </a>
           <a
             href="https://wa.me/917349034720"

@@ -17,9 +17,8 @@ export default function PageHeader({ title, breadcrumb, bgImage }) {
             <path d="M0,20 C360,-30 1080,70 1440,20 L1440,100 C1080,150 360,50 0,100 Z" fill="url(#blueGradient)" />
             <defs>
               <linearGradient id="blueGradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#0284c7" />
-                <stop offset="0.5" stopColor="#2563eb" />
-                <stop offset="1" stopColor="#0369a1" />
+                <stop stopColor="#002f6c" />
+                <stop offset="1" stopColor="#001a40" />
               </linearGradient>
             </defs>
           </svg>
