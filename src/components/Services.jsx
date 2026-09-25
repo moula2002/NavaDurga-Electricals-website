@@ -10,6 +10,7 @@ import imgMgmt from '../assets/service_mgmt.png';
 import imgDesign from '../assets/service_design.png';
 import imgSubstation from '../assets/substation_image_1789710679202.png';
 import imgFacilityTeam from '../assets/projects/facility_team.jpg';
+import imgPwdCivil from '../assets/pwd_civil_contractor.jpg';
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState('all');
@@ -21,6 +22,7 @@ export default function Services() {
     { id: 'mep_maintenance', label: 'M.E.P. Maintenance' },
     { id: 'mep_designing', label: 'M.E.P. Designing' },
     { id: 'facility_mgmt', label: 'M.E.P. Facility Management' },
+    { id: 'pwd_civil', label: 'Pwd Civil Works' },
   ];
 
   const officialServices = [
@@ -73,6 +75,16 @@ export default function Services() {
       icon: Building2,
       path: '/services/facility-management',
       features: ['Building Management Systems', 'On-Site Engineering Staff', 'Power Quality Optimization']
+    },
+    {
+      id: 'pwd-civil-contractor',
+      category: 'pwd_civil',
+      title: 'Pwd Civil Contractor',
+      subtitle: 'Govt. Authorised PWD Civil Maintenance & Infrastructure Upkeep',
+      image: imgPwdCivil,
+      icon: Building2,
+      path: '/services/pwd-civil-contractor',
+      features: ['Building Repair', 'Infrastructure Upkeep', 'Waterproofing Solutions']
     }
   ];
 

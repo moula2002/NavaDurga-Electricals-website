@@ -8,7 +8,7 @@ import bgImg from '../assets/electrician_hero_1789710416079.png';
 
 export default function Contact() {
   const form = useRef();
-  
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -32,7 +32,7 @@ export default function Contact() {
         form.current,
         '1z0TW7uHFzIIwvJP5'
       );
-      
+
       setSubmitted(true);
       setFormData({
         name: '',
@@ -92,13 +92,13 @@ export default function Contact() {
                 </div>
               </a>
 
-              <a href="mailto:electricalsnavadurga@gmail.com" className="flex items-center gap-3 p-3.5 bg-white rounded-xl border border-slate-200 hover:border-blue-500 transition-colors shadow-sm">
+              <a href="mailto:info@navadurgaelectricals.com" className="flex items-center gap-3 p-3.5 bg-white rounded-xl border border-slate-200 hover:border-blue-500 transition-colors shadow-sm">
                 <div className="w-9 h-9 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <div className="text-[10px] text-slate-400 font-bold uppercase">Official Email</div>
-                  <div className="text-xs font-bold text-slate-900">electricalsnavadurga@gmail.com</div>
+                  <div className="text-xs font-bold text-slate-900">info@navadurgaelectricals.com</div>
                 </div>
               </a>
 

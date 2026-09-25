@@ -112,8 +112,8 @@ export default function CardBanner({ onOpenQuoteModal }) {
         <div className="md:col-span-6 flex flex-col sm:flex-row items-start sm:items-center justify-end gap-4">
           <div className="flex items-center gap-2">
             <Mail className="w-4 h-4 text-blue-600 shrink-0" />
-            <a href="mailto:electricalsnavadurga@gmail.com" className="hover:text-blue-600 font-bold text-slate-900">
-              electricalsnavadurga@gmail.com
+            <a href="mailto:info@navadurgaelectricals.com" className="hover:text-blue-600 font-bold text-slate-900">
+              info@navadurgaelectricals.com
             </a>
           </div>
 

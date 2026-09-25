@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
   return (
     <div className="bg-white min-h-screen">
       <PageHeader title="Privacy Policy" breadcrumb="Privacy Policy" bgImage={bgImg} />
-      
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-slate-700 space-y-8 font-medium">
         <section>
           <h2 className="text-2xl font-black text-slate-900 font-['Plus_Jakarta_Sans'] mb-4">1. Introduction</h2>
@@ -46,10 +46,10 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-black text-slate-900 font-['Plus_Jakarta_Sans'] mb-4">5. Contact Details</h2>
           <p>
-            If you have any questions about this privacy policy or our privacy practices, please contact us at: <br/><br/>
-            <strong>Navadurga Electricals</strong><br/>
-            No. 433, 11th Block, 2nd 'D' Main, Second Stage, Nagarabhavi, Bangalore - 560072.<br/>
-            Email: electricalsnavadurga@gmail.com<br/>
+            If you have any questions about this privacy policy or our privacy practices, please contact us at: <br /><br />
+            <strong>Navadurga Electricals</strong><br />
+            No. 433, 11th Block, 2nd 'D' Main, Second Stage, Nagarabhavi, Bangalore - 560072.<br />
+            Email: info@navadurgaelectricals.com<br />
             Phone: +91 73385 91198
           </p>
         </section>

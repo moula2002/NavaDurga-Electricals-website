@@ -9,6 +9,7 @@ import PlumbingService from './components/PlumbingService';
 import MepMaintenanceService from './components/MepMaintenanceService';
 import MepDesigningService from './components/MepDesigningService';
 import FacilityManagementService from './components/FacilityManagementService';
+import PwdCivilContractorService from './components/PwdCivilContractorService';
 import Portfolio from './components/Portfolio';
 import Gallery from './components/Gallery';
 import Clients from './components/Clients';
@@ -90,6 +91,7 @@ export default function App() {
             <Route path="/services/mep-maintenance" element={<MepMaintenanceService />} />
             <Route path="/services/mep-designing" element={<MepDesigningService />} />
             <Route path="/services/facility-management" element={<FacilityManagementService />} />
+            <Route path="/services/pwd-civil-contractor" element={<PwdCivilContractorService />} />
             <Route path="/projects" element={<Portfolio onSelectProject={handleSelectProject} />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/gallery" element={<Gallery />} />

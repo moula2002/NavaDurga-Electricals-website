@@ -8,7 +8,7 @@ import { WhatsAppIcon, PhoneCallIcon, FacebookIcon, InstagramIcon, LinkedinIcon,
 export default function Footer() {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: { 
+    visible: {
       opacity: 1,
       transition: { staggerChildren: 0.1, delayChildren: 0.1 }
     }
@@ -16,8 +16,8 @@ export default function Footer() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.5, ease: 'easeOut' }
     }
@@ -27,12 +27,12 @@ export default function Footer() {
     <footer className="relative bg-[#0B1120] text-slate-300 pt-16 pb-8 overflow-hidden">
       {/* Subtle Top Gradient Border */}
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-blue-900/50 to-transparent" />
-      
+
       {/* Soft Glow in background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -112,7 +112,7 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center shrink-0">
                   <Mail className="w-3.5 h-3.5 text-sky-400" />
                 </div>
-                <span className="hover:text-white transition-colors cursor-pointer">electricalsnavadurga@gmail.com</span>
+                <span className="hover:text-white transition-colors cursor-pointer">info@navadurgaelectricals.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center shrink-0 mt-0.5">
@@ -125,7 +125,7 @@ export default function Footer() {
         </motion.div>
 
         {/* Bottom Bar */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
