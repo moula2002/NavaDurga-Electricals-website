@@ -89,6 +89,7 @@ export default function Footer() {
               <li><Link to="/services/mep-maintenance" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> MEP Maintenance</Link></li>
               <li><Link to="/services/mep-designing" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> MEP Designing</Link></li>
               <li><Link to="/services/facility-management" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Facility Management</Link></li>
+              <li><Link to="/services/pwd-civil-contractor" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> PWD Civil Contractor</Link></li>
             </ul>
           </motion.div>
 

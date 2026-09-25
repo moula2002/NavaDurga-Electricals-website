@@ -31,7 +31,7 @@ export default function Navbar({ onOpenQuoteModal }) {
         { name: 'MEP Maintenance', path: '/services/mep-maintenance' },
         { name: 'MEP Designing', path: '/services/mep-designing' },
         { name: 'Facility Management', path: '/services/facility-management' },
-        { name: 'Pwd Civil Contractor', path: '/services/pwd-civil-contractor' },
+        { name: 'PWD Civil Contractor', path: '/services/pwd-civil-contractor' },
       ]
     },
     { name: 'Projects', path: '/projects' },

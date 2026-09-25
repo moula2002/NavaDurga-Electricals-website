@@ -7,7 +7,7 @@ import bgImg from '../assets/pwd_civil_contractor.jpg';
 export default function PwdCivilContractorService() {
   return (
     <div id="service-pwd-civil" className="bg-white py-16 border-t border-slate-200">
-      <PageHeader title="Pwd Civil Contractor" breadcrumb="Services / Pwd Civil" bgImage={bgImg} />
+      <PageHeader title="PWD Civil Contractor" breadcrumb="Services / PWD Civil" bgImage={bgImg} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-7 space-y-4">

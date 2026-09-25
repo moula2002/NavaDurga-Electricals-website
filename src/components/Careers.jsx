@@ -87,10 +87,11 @@ export default function Careers() {
           <div className="space-y-4">
             {[
               { title: 'Senior Electrical Engineer', exp: '5-7 Years', type: 'Full-time', location: 'Bangalore' },
-              { title: 'MEP Draftsman (AutoCAD/Revit)', exp: '3-5 Years', type: 'Full-time', location: 'Bangalore' },
               { title: 'Site Supervisor (Plumbing)', exp: '2-4 Years', type: 'Full-time', location: 'On-site' },
               { title: 'Plumbers', exp: '2-4 Years', type: 'Full-time', location: 'On-site' },
-              { title: 'Merchants Manager', exp: '3-5 Years', type: 'Full-time', location: 'Bangalore' }
+              { title: 'Civil Mason', exp: '3-5 Years', type: 'Full-time', location: 'Bangalore' },
+              { title: 'Electricians', exp: '2-4 Years', type: 'Full-time', location: 'On-site' },
+              { title: 'MEP Draftsman (AutoCAD/Revit)', exp: '3-5 Years', type: 'Full-time', location: 'Bangalore' }
             ].map((job, idx) => (
               <div key={idx} className="bg-white border border-slate-200 rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center shadow-sm hover:shadow-md transition-shadow">
                 <div>

@@ -22,7 +22,7 @@ export default function Services() {
     { id: 'mep_maintenance', label: 'M.E.P. Maintenance' },
     { id: 'mep_designing', label: 'M.E.P. Designing' },
     { id: 'facility_mgmt', label: 'M.E.P. Facility Management' },
-    { id: 'pwd_civil', label: 'Pwd Civil Works' },
+    { id: 'pwd_civil', label: 'PWD Civil Works' },
   ];
 
   const officialServices = [
@@ -79,7 +79,7 @@ export default function Services() {
     {
       id: 'pwd-civil-contractor',
       category: 'pwd_civil',
-      title: 'Pwd Civil Contractor',
+      title: 'PWD Civil Contractor',
       subtitle: 'Govt. Authorised PWD Civil Maintenance & Infrastructure Upkeep',
       image: imgPwdCivil,
       icon: Building2,
