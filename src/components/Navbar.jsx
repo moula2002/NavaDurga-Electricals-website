@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from './Logo';
-import { Phone, Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
+import { Phone, Mail, Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 
 export default function Navbar({ onOpenQuoteModal }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -56,13 +56,22 @@ export default function Navbar({ onOpenQuoteModal }) {
               Navadurga Electricals is honoured and proud to be a Govt. Authorised Class I Electrical Contractor. <span className="mx-4 text-sky-400">|</span> Reliable Electrical Solutions for Every Project. <span className="mx-4 text-sky-400">|</span> Contact us for transparent quotation for HT/LT & Building MEP.
             </div>
           </div>
-          <a
-            href="tel:7338591198"
-            className="flex items-center gap-1.5 font-bold text-white hover:text-sky-300 transition-colors shrink-0 ml-4 pl-4 border-l border-white/20"
-          >
-            <Phone className="w-3 h-3 text-sky-300" />
-            <span>+91 73385 91198</span>
-          </a>
+          <div className="flex items-center shrink-0 ml-4 pl-4 border-l border-white/20">
+            <a
+              href="mailto:info@navadurgaelectricals.com"
+              className="flex items-center gap-1.5 font-bold text-white hover:text-sky-300 transition-colors mr-4 pr-4 border-r border-white/20 hidden sm:flex"
+            >
+              <Mail className="w-3 h-3 text-sky-300" />
+              <span>info@navadurgaelectricals.com</span>
+            </a>
+            <a
+              href="tel:7338591198"
+              className="flex items-center gap-1.5 font-bold text-white hover:text-sky-300 transition-colors"
+            >
+              <Phone className="w-3 h-3 text-sky-300" />
+              <span>+91 73385 91198</span>
+            </a>
+          </div>
         </div>
       </div>
 
