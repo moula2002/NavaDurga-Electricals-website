@@ -232,25 +232,6 @@ export default function Services() {
             </AnimatePresence>
           </motion.div>
 
-          {/* Decorative Curvy Arrow in the Empty Right Space */}
-          {!isPage && (
-            <div className="hidden lg:flex flex-col items-center justify-center absolute right-8 bottom-12 opacity-70 pointer-events-none">
-              <span className="text-[11px] font-bold text-blue-500 tracking-wider uppercase mb-1">
-                Scroll Down
-              </span>
-              <svg
-                className="w-20 h-28 text-blue-500 animate-bounce"
-                viewBox="0 0 80 120"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeDasharray="4 4"
-              >
-                <path d="M 20 10 Q 70 40 40 100" />
-                <path d="M 28 88 L 40 100 L 52 88" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-              </svg>
-            </div>
-          )}
         </div>
 
       </div>
