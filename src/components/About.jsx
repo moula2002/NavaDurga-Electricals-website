@@ -5,6 +5,7 @@ import aboutImg from '../assets/about_engineer_1789710446645.png';
 import bgImg from '../assets/about_engineer_1789710446645.png';
 import ceoImg from '../assets/CEO Chethan.jpeg';
 import techDirectorImg from '../assets/Technical Director.jpeg';
+import gmImg from '../assets/General  manager.jpeg';
 
 
 export default function About() {
@@ -91,6 +92,39 @@ export default function About() {
                 </p>
                 <p className="text-slate-600 leading-relaxed font-medium text-sm">
                   He ensures that all MEP and electrical deployments are executed with absolute precision, strict regulatory compliance, and maximum efficiency. His hands-on approach guarantees that quality control is maintained at every level of execution.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* General Manager Profile */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-col md:flex-row items-center gap-8 md:gap-14"
+            >
+              <div className="w-full md:w-2/5 shrink-0">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] group border-4 border-white">
+                  <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
+                  <img 
+                    src={gmImg} 
+                    alt="Mithun - General Manager" 
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                </div>
+              </div>
+              <div className="w-full md:w-3/5 space-y-4">
+                <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100 text-[10px] font-bold tracking-widest uppercase mb-1">
+                  General Manager
+                </div>
+                <h5 className="text-3xl md:text-4xl font-black text-slate-900 font-['Plus_Jakarta_Sans']">Mr. Mithun</h5>
+                <div className="w-16 h-1 bg-blue-600 rounded-full my-4"></div>
+                <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                  With strong expertise in project management and operational leadership, Mr. Mithun plays a key role in driving the smooth execution and overall growth of Navadurga Electricals.
+                </p>
+                <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                  His responsibilities focus on coordinating project teams, clients, contractors, and vendors while ensuring timely execution, effective resource management, and adherence to quality and safety standards. His strategic approach helps maintain operational efficiency and strengthens the company’s commitment to delivering reliable electrical and MEP solutions.
                 </p>
               </div>
             </motion.div>
