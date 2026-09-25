@@ -15,6 +15,7 @@ import slideMaintenance from '../assets/service_mgmt.png';
 import slideDesign from '../assets/mep_blueprint_1789710498568.png';
 import slideFacility from '../assets/projects/facility_team.jpg';
 import slidePwdCivil from '../assets/pwd_civil_contractor.jpg';
+import slideSolar from '../assets/solar_inverter_installation.jpg';
 
 export default function Banner({ onOpenQuoteModal }) {
   const slides = [
@@ -64,6 +65,14 @@ export default function Banner({ onOpenQuoteModal }) {
       subtitle: 'Govt. Authorised PWD Civil Maintenance & Infrastructure Upkeep',
       buttonText: 'Explore Service',
       buttonLink: '/services/pwd-civil-contractor',
+      align: 'center'
+    },
+    {
+      image: slideSolar,
+      title: 'Solar & Inverter Installations',
+      subtitle: 'Turnkey Rooftop Solar Power Plants & Heavy-Duty Backup Setup',
+      buttonText: 'Explore Service',
+      buttonLink: '/services/solar-inverter-installations',
       align: 'center'
     }
   ];

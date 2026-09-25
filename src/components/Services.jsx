@@ -11,6 +11,7 @@ import imgDesign from '../assets/service_design.png';
 import imgSubstation from '../assets/substation_image_1789710679202.png';
 import imgFacilityTeam from '../assets/projects/facility_team.jpg';
 import imgPwdCivil from '../assets/pwd_civil_contractor.jpg';
+import imgSolar from '../assets/solar_inverter_installation.jpg';
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState('all');
@@ -23,6 +24,7 @@ export default function Services() {
     { id: 'mep_designing', label: 'M.E.P. Designing' },
     { id: 'facility_mgmt', label: 'M.E.P. Facility Management' },
     { id: 'pwd_civil', label: 'PWD Civil Works' },
+    { id: 'solar_inverter', label: 'Solar & Inverters' },
   ];
 
   const officialServices = [
@@ -85,6 +87,16 @@ export default function Services() {
       icon: Building2,
       path: '/services/pwd-civil-contractor',
       features: ['Building Repair', 'Infrastructure Upkeep', 'Waterproofing Solutions']
+    },
+    {
+      id: 'solar-inverter-installations',
+      category: 'solar_inverter',
+      title: 'Solar & Inverter Installations',
+      subtitle: 'Turnkey Rooftop Solar Power & Heavy-Duty Inverter Backup Systems',
+      image: imgSolar,
+      icon: Zap,
+      path: '/services/solar-inverter-installations',
+      features: ['On-Grid / Off-Grid Solar', 'Net Metering Approval', 'Battery & Inverter Setup']
     }
   ];
 
