@@ -9,44 +9,61 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
-// Assets for the slider
-import slide1Img from '../assets/electrical_hero_bg.png';
-import slide2Img from '../assets/substation_image_1789710679202.png';
-import slide3Img from '../assets/mep_blueprint_1789710498568.png';
-import slide4Img from '../assets/plumbing_pipes_1789710473426.png';
+import slideElectrical from '../assets/electrical_hero_bg.png';
+import slidePlumbing from '../assets/plumbing_pipes_1789710473426.png';
+import slideMaintenance from '../assets/service_mgmt.png';
+import slideDesign from '../assets/mep_blueprint_1789710498568.png';
+import slideFacility from '../assets/projects/facility_team.jpg';
+import slidePwdCivil from '../assets/pwd_civil_contractor.jpg';
 
 export default function Banner({ onOpenQuoteModal }) {
   const slides = [
     {
-      image: slide1Img,
-      title: 'Powering a Better Tomorrow',
-      subtitle: 'Govt. Authorised Class I Electrical Contractor for a Safer, Smarter & Sustainable Future',
-      buttonText: 'Get a Quote',
-      buttonLink: '/contact',
+      image: slideElectrical,
+      title: 'HT/LT Electrical Services',
+      subtitle: 'Govt. Authorised Class-I Transformer, Substation & Power Distribution',
+      buttonText: 'Explore Service',
+      buttonLink: '/services/ht-lt',
       align: 'center'
     },
     {
-      image: slide2Img,
-      title: 'Reliable Electrical Solutions',
-      subtitle: 'Expertise in HT/LT Installations & Industrial Electrification',
-      buttonText: 'View Projects',
-      buttonLink: '/projects',
+      image: slidePlumbing,
+      title: 'Plumbing Services',
+      subtitle: 'Commercial & Industrial Heavy Duty Piping Systems',
+      buttonText: 'Explore Service',
+      buttonLink: '/services/plumbing',
       align: 'center'
     },
     {
-      image: slide3Img,
-      title: 'Comprehensive MEP Designing',
-      subtitle: 'Delivering state-of-the-art Mechanical, Electrical & Plumbing systems',
-      buttonText: 'Our Services',
-      buttonLink: '/services',
+      image: slideMaintenance,
+      title: 'MEP Maintenance',
+      subtitle: '24/7 Preventive & Emergency MEP AMC Maintenance',
+      buttonText: 'Explore Service',
+      buttonLink: '/services/mep-maintenance',
       align: 'center'
     },
     {
-      image: slide4Img,
-      title: 'Facility Management Services',
-      subtitle: 'Ensuring seamless operations and 24/7 maintenance support',
-      buttonText: 'Contact Us',
-      buttonLink: '/contact',
+      image: slideDesign,
+      title: 'MEP Designing',
+      subtitle: 'CAD Blueprints, Electrical Load Schemes & Mechanical Layouts',
+      buttonText: 'Explore Service',
+      buttonLink: '/services/mep-designing',
+      align: 'center'
+    },
+    {
+      image: slideFacility,
+      title: 'Facility Management',
+      subtitle: 'Complete Building Utilities & Infrastructure Management',
+      buttonText: 'Explore Service',
+      buttonLink: '/services/facility-management',
+      align: 'center'
+    },
+    {
+      image: slidePwdCivil,
+      title: 'Civil Maintenance',
+      subtitle: 'Govt. Authorised PWD Civil Maintenance & Infrastructure Upkeep',
+      buttonText: 'Explore Service',
+      buttonLink: '/services/pwd-civil-contractor',
       align: 'center'
     }
   ];
