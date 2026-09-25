@@ -53,7 +53,7 @@ export default function Banner({ onOpenQuoteModal }) {
     },
     {
       image: slideFacility,
-      title: 'Facility Management',
+      title: 'MEP Facility Management',
       subtitle: 'Complete Building Utilities & Infrastructure Management',
       buttonText: 'Explore Service',
       buttonLink: '/services/facility-management',

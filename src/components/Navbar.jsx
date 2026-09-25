@@ -29,8 +29,8 @@ export default function Navbar({ onOpenQuoteModal }) {
         { name: 'HT/LT Electrical', path: '/services/ht-lt' },
         { name: 'Plumbing Service', path: '/services/plumbing' },
         { name: 'MEP Maintenance', path: '/services/mep-maintenance' },
+        { name: 'MEP Facility Management', path: '/services/facility-management' },
         { name: 'MEP Designing', path: '/services/mep-designing' },
-        { name: 'Facility Management', path: '/services/facility-management' },
         { name: 'PWD Civil Contractor', path: '/services/pwd-civil-contractor' },
         { name: 'Solar & Inverter Installations', path: '/services/solar-inverter-installations' },
       ]
