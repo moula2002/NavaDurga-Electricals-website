@@ -51,7 +51,7 @@ export default function Footer() {
             <div className="pt-3">
               <p className="font-mono text-[10px] text-slate-500 mb-3 uppercase tracking-wider">GSTIN : 29DWLPS9412J1ZP</p>
               <div className="flex gap-2.5">
-                <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
+                <a href="https://www.facebook.com/people/Chethan-Salian/pfbid0sfpCyZX9Ev6PHKbRFEmRfoHgEM1ae4LussZuXgHm3sZz2TV3H8o2cdoq69jwkmcFl/?rdid=0hWzn3PvV1Gg6OIj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DkggdfCTm%2F" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
                   <FacebookIcon className="w-4 h-4" />
                 </a>
                 <a href="https://www.instagram.com/navadurga712?stkn=dTRzcHAxZm8wbm1r" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all">
