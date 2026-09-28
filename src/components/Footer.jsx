@@ -54,7 +54,7 @@ export default function Footer() {
                 <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
                   <FacebookIcon className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all">
+                <a href="https://www.instagram.com/navadurga712?stkn=dTRzcHAxZm8wbm1r" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all">
                   <InstagramIcon className="w-4 h-4" />
                 </a>
                 <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-600 hover:text-white transition-all">
