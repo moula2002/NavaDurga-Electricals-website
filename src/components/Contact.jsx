@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import PageHeader from './PageHeader';
 import { Phone, Mail, MapPin, FileText, Send, CheckCircle2 } from 'lucide-react';
 import { WhatsAppIcon, PhoneCallIcon } from './Icons';
@@ -19,31 +18,46 @@ export default function Contact() {
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage('');
 
     try {
-      // NOTE: Replace these strings with your actual EmailJS credentials
-      await emailjs.sendForm(
-        'service_ni2jqa6',
-        'template_or5yklj',
-        form.current,
-        '1z0TW7uHFzIIwvJP5'
-      );
+      const apiPayload = {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        service: formData.service,
+        message: formData.message
+      };
 
-      setSubmitted(true);
-      setFormData({
-        name: '',
-        phone: '',
-        email: '',
-        service: 'HT/LT Electrical Contractor',
-        message: '',
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${API_URL}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(apiPayload),
       });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({
+          name: '',
+          phone: '',
+          email: '',
+          service: 'HT/LT Electrical Contractor',
+          message: '',
+        });
+      } else {
+        setErrorMessage(data.message || 'There was an error sending your message. Please try again later.');
+      }
     } catch (error) {
-      console.error('EmailJS Error:', error);
-      alert('There was an error sending your message. Please try again later.');
+      console.error('API Error:', error);
+      setErrorMessage('There was an error sending your message. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -167,6 +181,12 @@ export default function Contact() {
                       Fill out the form below and we will get back to you within 24 hours.
                     </p>
                   </div>
+
+                  {errorMessage && (
+                    <div className="p-3 mb-4 text-xs text-red-700 bg-red-100 rounded-xl border border-red-200">
+                      {errorMessage}
+                    </div>
+                  )}
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
