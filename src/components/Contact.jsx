@@ -27,14 +27,14 @@ export default function Contact() {
 
     try {
       const apiPayload = {
-        name: formData.name,
+        fullName: formData.name,
         phone: formData.phone,
         email: formData.email,
         service: formData.service,
         message: formData.message
       };
 
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://navadurga-server.onrender.com';
       const response = await fetch(`${API_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
