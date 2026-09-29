@@ -27,7 +27,7 @@ export default function Contact() {
 
     try {
       const apiPayload = {
-        fullName: formData.name,
+        name: formData.name,
         phone: formData.phone,
         email: formData.email,
         service: formData.service,
