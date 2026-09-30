@@ -16,6 +16,8 @@ import Gallery from './components/Gallery';
 import Clients from './components/Clients';
 import Testimonials from './components/Testimonials';
 import Careers from './components/Careers';
+import JobDetails from './components/JobDetails';
+import JobApply from './components/JobApply';
 import Enquiry from './components/Enquiry';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -99,6 +101,8 @@ export default function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/careers/:id" element={<JobDetails />} />
+            <Route path="/careers/:jobId/apply" element={<JobApply />} />
             <Route path="/enquiry" element={<Enquiry />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

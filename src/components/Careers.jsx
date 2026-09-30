@@ -1,17 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageHeader from './PageHeader';
 import careerImg from '../assets/career_engineer_1789710523840.png';
 import bgImg from '../assets/career_engineer_1789710523840.png';
 
-
 export default function Careers() {
+  const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   const benefits = [
     'Work on exciting infrastructure projects',
     'Learn and grow with senior Class I engineers',
     'Supportive work environment & safety gear',
     'Competitive salary & performance bonuses',
   ];
+
+  useEffect(() => {
+    const fetchJobs = async () => {
+      try {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/jobOpenings`);
+        if (!res.ok) throw new Error('Failed to fetch jobs');
+        const data = await res.json();
+        setJobs(data);
+      } catch (err) {
+        console.error("Failed to fetch jobs", err);
+        setError("Unable to load job openings. Please try again.");
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchJobs();
+  }, []);
 
   return (
     <section id="careers" className="bg-white border-t border-slate-200">
@@ -84,30 +104,34 @@ export default function Careers() {
         <div className="mt-24" id="open-positions">
           <h3 className="text-2xl font-black text-slate-900 mb-8 font-['Plus_Jakarta_Sans']">Current Openings</h3>
           
-          <div className="space-y-4">
-            {[
-              { title: 'Senior Electrical Engineer', exp: '5-7 Years', type: 'Full-time', location: 'Bangalore' },
-              { title: 'Site Supervisor (Plumbing)', exp: '2-4 Years', type: 'Full-time', location: 'On-site' },
-              { title: 'Plumbers', exp: '2-4 Years', type: 'Full-time', location: 'On-site' },
-              { title: 'Civil Mason', exp: '3-5 Years', type: 'Full-time', location: 'Bangalore' },
-              { title: 'Electricians', exp: '2-4 Years', type: 'Full-time', location: 'On-site' },
-              { title: 'MEP Draftsman (AutoCAD/Revit)', exp: '3-5 Years', type: 'Full-time', location: 'Bangalore' }
-            ].map((job, idx) => (
-              <div key={idx} className="bg-white border border-slate-200 rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center shadow-sm hover:shadow-md transition-shadow">
-                <div>
-                  <h4 className="font-bold text-slate-900 text-lg mb-1">{job.title}</h4>
-                  <div className="flex flex-wrap gap-3 text-xs font-semibold text-slate-500">
-                    <span className="bg-slate-100 px-2 py-1 rounded">Exp: {job.exp}</span>
-                    <span className="bg-slate-100 px-2 py-1 rounded">{job.type}</span>
-                    <span className="bg-slate-100 px-2 py-1 rounded">{job.location}</span>
+          {loading ? (
+            <div className="text-center py-12 text-slate-500 font-medium">Loading open positions...</div>
+          ) : error ? (
+            <div className="text-center py-12 text-red-600 font-medium bg-red-50 rounded-xl border border-red-100">{error}</div>
+          ) : jobs.length === 0 ? (
+            <div className="text-center py-12 bg-slate-50 border border-slate-100 rounded-xl">
+              <p className="text-slate-600 font-medium">Currently, there are no open positions.</p>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {jobs.map((job) => (
+                <div key={job._id} className="bg-white border border-slate-200 rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center shadow-sm hover:shadow-md transition-shadow">
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-lg mb-1">{job.jobRole}</h4>
+                    <div className="flex flex-wrap gap-3 text-xs font-semibold text-slate-500">
+                      <span className="bg-slate-100 px-2 py-1 rounded">Exp: {job.experience}</span>
+                      <span className="bg-slate-100 px-2 py-1 rounded">{job.employmentType}</span>
+                      <span className="bg-slate-100 px-2 py-1 rounded">{job.location}</span>
+                    </div>
                   </div>
+                  {/* Redirect to Job Details Page */}
+                  <Link to={`/careers/${job._id}`} className="mt-4 md:mt-0 px-6 py-2.5 rounded-lg bg-slate-900 text-white font-bold text-xs hover:bg-blue-600 transition-colors">
+                    View Details
+                  </Link>
                 </div>
-                <Link to="/contact" className="mt-4 md:mt-0 px-6 py-2.5 rounded-lg bg-slate-900 text-white font-bold text-xs hover:bg-blue-600 transition-colors">
-                  Apply Now
-                </Link>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
           
           <div className="mt-8 text-center text-sm text-slate-600">
             Don't see a role that fits? Send your resume to <a href="mailto:careers@navadurgaelectricals.com" className="text-blue-600 font-bold hover:underline">careers@navadurgaelectricals.com</a>

@@ -1,20 +1,26 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import PageHeader from './PageHeader';
 import { Phone, Mail, MapPin, FileText, Send, CheckCircle2 } from 'lucide-react';
 import { WhatsAppIcon, PhoneCallIcon } from './Icons';
 import bgImg from '../assets/electrician_hero_1789710416079.png';
 
-
 export default function Contact() {
   const form = useRef();
+  const location = useLocation();
 
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
-    service: 'HT/LT Electrical Contractor',
+    service: location.state?.subject || 'HT/LT Electrical Contractor',
     message: '',
   });
+
+  const passedSubject = location.state?.subject;
+
+  // Ensure the dynamically passed job title is available in the dropdown
+  const jobTitleOption = passedSubject && !['HT/LT Electrical Contractor', 'Plumbing Contractor', 'MEP Maintenance Work', 'MEP Designing', 'Facility Management', 'Building MEP Erection'].includes(passedSubject) ? passedSubject : null;
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,39 +31,48 @@ export default function Contact() {
     setIsSubmitting(true);
     setErrorMessage('');
 
-    try {
-      const apiPayload = {
-        name: formData.name,
-        phone: formData.phone,
-        email: formData.email,
-        service: formData.service,
-        message: formData.message
-      };
+    // Basic Validation
+    const phoneRegex = /^[0-9]{10,15}$/;
+    if (!phoneRegex.test(formData.phone.replace(/[^0-9]/g, ''))) {
+      setErrorMessage('Please enter a valid phone number (10-15 digits).');
+      setIsSubmitting(false);
+      return;
+    }
 
-      const API_URL = import.meta.env.VITE_API_URL || 'https://navadurga-server.onrender.com';
-      const response = await fetch(`${API_URL}/api/contact`, {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setErrorMessage('Please enter a valid email address.');
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/enquiry`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(apiPayload),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.service,
+          message: formData.message,
+        }),
       });
 
-      const data = await response.json();
-
-      if (data.success) {
-        setSubmitted(true);
-        setFormData({
-          name: '',
-          phone: '',
-          email: '',
-          service: 'HT/LT Electrical Contractor',
-          message: '',
-        });
-      } else {
-        setErrorMessage(data.message || 'There was an error sending your message. Please try again later.');
+      if (!response.ok) {
+        throw new Error('Failed to send message');
       }
+
+      setSubmitted(true);
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        service: 'HT/LT Electrical Contractor',
+        message: '',
+      });
     } catch (error) {
-      console.error('API Error:', error);
-      setErrorMessage('There was an error sending your message. Please try again later.');
+      setErrorMessage(error.message || 'An error occurred while sending your message. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -252,6 +267,7 @@ export default function Contact() {
                         <option>MEP Designing</option>
                         <option>Facility Management</option>
                         <option>Building MEP Erection</option>
+                        {jobTitleOption && <option value={jobTitleOption}>{jobTitleOption} (Career Application)</option>}
                       </select>
                     </div>
                   </div>
