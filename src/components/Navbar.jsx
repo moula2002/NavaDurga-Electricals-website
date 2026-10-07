@@ -26,13 +26,13 @@ export default function Navbar({ onOpenQuoteModal }) {
       path: '/services',
       hasDropdown: true,
       dropdownItems: [
-        { name: 'HT/LT Electrical', path: '/services/ht-lt' },
-        { name: 'Plumbing Service', path: '/services/plumbing' },
-        { name: 'MEP Maintenance', path: '/services/mep-maintenance' },
+        { name: 'HT/LT Electrical Contractor', path: '/services/ht-lt' },
+        { name: 'Plumbing Contractor', path: '/services/plumbing' },
+        { name: 'MEP Maintenance Services', path: '/services/mep-maintenance' },
         { name: 'MEP Facility Management', path: '/services/facility-management' },
         { name: 'Solar & Inverter Installations', path: '/services/solar-inverter-installations' },
         { name: 'MEP Designing', path: '/services/mep-designing' },
-        { name: 'PWD Civil Contractor', path: '/services/pwd-civil-contractor' },
+        { name: 'Civil Maintenance Works', path: '/services/pwd-civil-contractor' },
       ]
     },
     { name: 'Projects', path: '/projects' },
