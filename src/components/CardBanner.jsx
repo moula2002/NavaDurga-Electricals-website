@@ -97,7 +97,7 @@ export default function CardBanner({ onOpenQuoteModal }) {
             </li>
             <li className="flex items-center gap-2 sm:col-span-2">
               <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
-              <span>Pwd Civil Contractor \ Civil Maintenance Works</span>
+              <span>Pwd Civil Contractor / Civil Maintenance Works</span>
             </li>
           </ul>
         </div>

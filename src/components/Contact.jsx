@@ -20,7 +20,7 @@ export default function Contact() {
   const passedSubject = location.state?.subject;
 
   // Ensure the dynamically passed job title is available in the dropdown
-  const jobTitleOption = passedSubject && !['Ht/Lt Electrical Contractors', 'Plumbing Contractor', 'Mep Facility Management', 'Mep Maintenance Work', 'Mep Designing', 'Solor And Inverter Installation Works', 'Pwd Civil Contractor \\ Civil Maintenance Works'].includes(passedSubject) ? passedSubject : null;
+  const jobTitleOption = passedSubject && !['Ht/Lt Electrical Contractors', 'Plumbing Contractor', 'Mep Facility Management', 'Mep Maintenance Work', 'Mep Designing', 'Solor And Inverter Installation Works', 'Pwd Civil Contractor / Civil Maintenance Works'].includes(passedSubject) ? passedSubject : null;
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -267,7 +267,7 @@ export default function Contact() {
                         <option>Mep Maintenance Work</option>
                         <option>Mep Designing</option>
                         <option>Solor And Inverter Installation Works</option>
-                        <option>Pwd Civil Contractor \ Civil Maintenance Works</option>
+                        <option>Pwd Civil Contractor / Civil Maintenance Works</option>
                         {jobTitleOption && <option value={jobTitleOption}>{jobTitleOption} (Career Application)</option>}
                       </select>
                     </div>

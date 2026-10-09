@@ -91,7 +91,7 @@ export default function Services() {
     {
       id: 'pwd-civil-contractor',
       category: 'pwd_civil',
-      title: 'Pwd Civil Contractor \\ Civil Maintenance Works',
+      title: 'Pwd Civil Contractor / Civil Maintenance Works',
       subtitle: 'Govt. Authorised PWD Civil Maintenance & Infrastructure Upkeep',
       image: imgPwdCivil,
       icon: Building2,

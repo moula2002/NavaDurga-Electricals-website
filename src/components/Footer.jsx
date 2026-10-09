@@ -90,7 +90,7 @@ export default function Footer() {
               <li><Link to="/services/mep-maintenance" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Mep Maintenance Work</Link></li>
               <li><Link to="/services/mep-designing" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Mep Designing</Link></li>
               <li><Link to="/services/solar-inverter-installations" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Solor And Inverter Installation Works</Link></li>
-              <li><Link to="/services/pwd-civil-contractor" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Pwd Civil Contractor \ Civil Maintenance Works</Link></li>
+              <li><Link to="/services/pwd-civil-contractor" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Pwd Civil Contractor / Civil Maintenance Works</Link></li>
             </ul>
           </motion.div>
 

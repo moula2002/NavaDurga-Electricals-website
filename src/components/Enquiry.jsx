@@ -114,7 +114,7 @@ export default function Enquiry() {
                     <option>Mep Maintenance Work</option>
                     <option>Mep Designing</option>
                     <option>Solor And Inverter Installation Works</option>
-                    <option>Pwd Civil Contractor \ Civil Maintenance Works</option>
+                    <option>Pwd Civil Contractor / Civil Maintenance Works</option>
                   </select>
                 </div>
               </div>

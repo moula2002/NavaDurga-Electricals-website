@@ -32,7 +32,7 @@ export default function Navbar({ onOpenQuoteModal }) {
         { name: 'Mep Maintenance Work', path: '/services/mep-maintenance' },
         { name: 'Mep Designing', path: '/services/mep-designing' },
         { name: 'Solor And Inverter Installation Works', path: '/services/solar-inverter-installations' },
-        { name: 'Pwd Civil Contractor \\ Civil Maintenance Works', path: '/services/pwd-civil-contractor' },
+        { name: 'Pwd Civil Contractor / Civil Maintenance Works', path: '/services/pwd-civil-contractor' },
       ]
     },
     { name: 'Projects', path: '/projects' },
