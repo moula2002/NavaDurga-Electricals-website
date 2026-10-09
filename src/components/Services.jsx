@@ -31,7 +31,7 @@ export default function Services() {
     {
       id: 'ht-lt',
       category: 'electrical',
-      title: 'HT/LT Electrical Contractor',
+      title: 'Ht/Lt Electrical Contractors',
       subtitle: 'Govt. Authorised Class-I Transformer, Substation & Power Distribution',
       image: imgElectrification,
       icon: Zap,
@@ -49,9 +49,19 @@ export default function Services() {
       features: ['Water Supply & Drainage', 'Pumping Station Lines', 'Sanitary Installations']
     },
     {
+      id: 'facility-management',
+      category: 'facility_mgmt',
+      title: 'Mep Facility Management',
+      subtitle: 'Complete Building Utilities & Infrastructure Management',
+      image: imgFacilityTeam,
+      icon: Building2,
+      path: '/services/facility-management',
+      features: ['Building Management Systems', 'On-Site Engineering Staff', 'Power Quality Optimization']
+    },
+    {
       id: 'mep-maintenance',
       category: 'mep_maintenance',
-      title: 'M.E.P. Maintenance Work',
+      title: 'Mep Maintenance Work',
       subtitle: '24/7 Preventive & Emergency MEP AMC Maintenance',
       image: imgMgmt,
       icon: Wrench,
@@ -61,7 +71,7 @@ export default function Services() {
     {
       id: 'mep-designing',
       category: 'mep_designing',
-      title: 'M.E.P. Designing',
+      title: 'Mep Designing',
       subtitle: 'CAD Blueprints, Electrical Load Schemes & Mechanical Layouts',
       image: imgDesign,
       icon: Compass,
@@ -69,34 +79,24 @@ export default function Services() {
       features: ['Building Electrical Schemes', 'Plumbing & Drainage CAD', 'Lighting & Power Layouts']
     },
     {
-      id: 'facility-management',
-      category: 'facility_mgmt',
-      title: 'M.E.P. Facility Management',
-      subtitle: 'Complete Building Utilities & Infrastructure Management',
-      image: imgFacilityTeam,
-      icon: Building2,
-      path: '/services/facility-management',
-      features: ['Building Management Systems', 'On-Site Engineering Staff', 'Power Quality Optimization']
-    },
-    {
-      id: 'pwd-civil-contractor',
-      category: 'pwd_civil',
-      title: 'Civil Maintenance Works',
-      subtitle: 'Govt. Authorised PWD Civil Maintenance & Infrastructure Upkeep',
-      image: imgPwdCivil,
-      icon: Building2,
-      path: '/services/pwd-civil-contractor',
-      features: ['Building Repair', 'Infrastructure Upkeep', 'Waterproofing Solutions']
-    },
-    {
       id: 'solar-inverter-installations',
       category: 'solar_inverter',
-      title: 'Solar & Inverter Installations',
+      title: 'Solor And Inverter Installation Works',
       subtitle: 'Turnkey Rooftop Solar Power & Heavy-Duty Inverter Backup Systems',
       image: imgSolar,
       icon: Zap,
       path: '/services/solar-inverter-installations',
       features: ['On-Grid / Off-Grid Solar', 'Net Metering Approval', 'Battery & Inverter Setup']
+    },
+    {
+      id: 'pwd-civil-contractor',
+      category: 'pwd_civil',
+      title: 'Pwd Civil Contractor For Civil Maintenance Works',
+      subtitle: 'Govt. Authorised PWD Civil Maintenance & Infrastructure Upkeep',
+      image: imgPwdCivil,
+      icon: Building2,
+      path: '/services/pwd-civil-contractor',
+      features: ['Building Repair', 'Infrastructure Upkeep', 'Waterproofing Solutions']
     }
   ];
 

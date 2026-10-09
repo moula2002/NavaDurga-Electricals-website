@@ -9,7 +9,7 @@ export default function Enquiry() {
     name: '',
     phone: '',
     email: '',
-    projectType: 'HT/LT Electrical Contractor',
+    projectType: 'Ht/Lt Electrical Contractors',
     message: ''
   });
 
@@ -38,7 +38,7 @@ export default function Enquiry() {
       const data = await response.json();
       if (data.success) {
         setSubmitted(true);
-        setFormData({ name: '', phone: '', email: '', projectType: 'HT/LT Electrical Contractor', message: '' });
+        setFormData({ name: '', phone: '', email: '', projectType: 'Ht/Lt Electrical Contractors', message: '' });
       } else {
         alert(data.message || 'Error submitting enquiry.');
       }
@@ -108,11 +108,13 @@ export default function Enquiry() {
                     onChange={handleChange}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-medium focus:outline-none focus:border-blue-600"
                   >
-                    <option>HT/LT Electrical Contractor</option>
+                    <option>Ht/Lt Electrical Contractors</option>
                     <option>Plumbing Contractor</option>
-                    <option>MEP Maintenance Work</option>
-                    <option>MEP Designing</option>
-                    <option>Facility Management</option>
+                    <option>Mep Facility Management</option>
+                    <option>Mep Maintenance Work</option>
+                    <option>Mep Designing</option>
+                    <option>Solor And Inverter Installation Works</option>
+                    <option>Pwd Civil Contractor For Civil Maintenance Works</option>
                   </select>
                 </div>
               </div>

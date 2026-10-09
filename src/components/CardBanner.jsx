@@ -73,7 +73,7 @@ export default function CardBanner({ onOpenQuoteModal }) {
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-slate-800 font-semibold">
             <li className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
-              <span>HT/LT Electrical Contractor</span>
+              <span>Ht/Lt Electrical Contractors</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
@@ -81,15 +81,23 @@ export default function CardBanner({ onOpenQuoteModal }) {
             </li>
             <li className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
-              <span>M.E.P. Maintenance Work</span>
+              <span>Mep Facility Management</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
-              <span>M.E.P. Designing</span>
+              <span>Mep Maintenance Work</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
+              <span>Mep Designing</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
+              <span>Solor And Inverter Installation Works</span>
             </li>
             <li className="flex items-center gap-2 sm:col-span-2">
               <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
-              <span>M.E.P. Facility Management</span>
+              <span>Pwd Civil Contractor For Civil Maintenance Works</span>
             </li>
           </ul>
         </div>

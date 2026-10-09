@@ -7,7 +7,7 @@ import bgImg from '../assets/electrician_hero_1789710416079.png';
 export default function MepMaintenanceService() {
   return (
     <div id="service-mep-maint" className="bg-white py-16 border-t border-slate-200">
-      <PageHeader title="MEP Maintenance Service" breadcrumb="Services / MEP Maintenance" bgImage={bgImg} />
+      <PageHeader title="Mep Maintenance Work" breadcrumb="Services / Mep Maintenance Work" bgImage={bgImg} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-7 space-y-4">

@@ -13,14 +13,14 @@ export default function Contact() {
     name: '',
     phone: '',
     email: '',
-    service: location.state?.subject || 'HT/LT Electrical Contractor',
+    service: location.state?.subject || 'Ht/Lt Electrical Contractors',
     message: '',
   });
 
   const passedSubject = location.state?.subject;
 
   // Ensure the dynamically passed job title is available in the dropdown
-  const jobTitleOption = passedSubject && !['HT/LT Electrical Contractor', 'Plumbing Contractor', 'MEP Maintenance Work', 'MEP Designing', 'Facility Management', 'Building MEP Erection'].includes(passedSubject) ? passedSubject : null;
+  const jobTitleOption = passedSubject && !['Ht/Lt Electrical Contractors', 'Plumbing Contractor', 'Mep Facility Management', 'Mep Maintenance Work', 'Mep Designing', 'Solor And Inverter Installation Works', 'Pwd Civil Contractor For Civil Maintenance Works'].includes(passedSubject) ? passedSubject : null;
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -68,7 +68,7 @@ export default function Contact() {
         name: '',
         phone: '',
         email: '',
-        service: 'HT/LT Electrical Contractor',
+        service: 'Ht/Lt Electrical Contractors',
         message: '',
       });
     } catch (error) {
@@ -261,12 +261,13 @@ export default function Contact() {
                         onChange={handleInputChange}
                         className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs font-medium focus:border-blue-600 focus:bg-white focus:outline-none"
                       >
-                        <option>HT/LT Electrical Contractor</option>
+                        <option>Ht/Lt Electrical Contractors</option>
                         <option>Plumbing Contractor</option>
-                        <option>MEP Maintenance Work</option>
-                        <option>MEP Designing</option>
-                        <option>Facility Management</option>
-                        <option>Building MEP Erection</option>
+                        <option>Mep Facility Management</option>
+                        <option>Mep Maintenance Work</option>
+                        <option>Mep Designing</option>
+                        <option>Solor And Inverter Installation Works</option>
+                        <option>Pwd Civil Contractor For Civil Maintenance Works</option>
                         {jobTitleOption && <option value={jobTitleOption}>{jobTitleOption} (Career Application)</option>}
                       </select>
                     </div>

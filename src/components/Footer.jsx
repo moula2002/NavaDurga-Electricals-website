@@ -84,13 +84,13 @@ export default function Footer() {
           <motion.div variants={itemVariants} className="space-y-4">
             <h4 className="text-xs font-black uppercase tracking-widest text-white">Our Services</h4>
             <ul className="space-y-2.5 text-slate-400 font-medium">
-              <li><Link to="/services/ht-lt" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> HT/LT Electrical Contractor</Link></li>
+              <li><Link to="/services/ht-lt" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Ht/Lt Electrical Contractors</Link></li>
               <li><Link to="/services/plumbing" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Plumbing Contractor</Link></li>
-              <li><Link to="/services/mep-maintenance" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> MEP Maintenance Services</Link></li>
-              <li><Link to="/services/facility-management" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> MEP Facility Management</Link></li>
-              <li><Link to="/services/solar-inverter-installations" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Solar & Inverter Installations</Link></li>
-              <li><Link to="/services/mep-designing" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> MEP Designing</Link></li>
-              <li><Link to="/services/pwd-civil-contractor" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Civil Maintenance Works</Link></li>
+              <li><Link to="/services/facility-management" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Mep Facility Management</Link></li>
+              <li><Link to="/services/mep-maintenance" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Mep Maintenance Work</Link></li>
+              <li><Link to="/services/mep-designing" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Mep Designing</Link></li>
+              <li><Link to="/services/solar-inverter-installations" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Solor And Inverter Installation Works</Link></li>
+              <li><Link to="/services/pwd-civil-contractor" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-blue-500 text-lg leading-none">&bull;</span> Pwd Civil Contractor For Civil Maintenance Works</Link></li>
             </ul>
           </motion.div>
 

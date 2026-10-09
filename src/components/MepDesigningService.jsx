@@ -7,7 +7,7 @@ import bgImg from '../assets/mep_blueprint_1789710498568.png';
 export default function MepDesigningService() {
   return (
     <div id="service-mep-design" className="bg-slate-50 py-16 border-t border-slate-200">
-      <PageHeader title="MEP Designing" breadcrumb="Services / MEP Designing" bgImage={bgImg} />
+      <PageHeader title="Mep Designing" breadcrumb="Services / Mep Designing" bgImage={bgImg} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-7 space-y-4">

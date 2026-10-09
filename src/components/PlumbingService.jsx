@@ -7,7 +7,7 @@ import bgImg from '../assets/plumbing_pipes_1789710473426.png';
 export default function PlumbingService() {
   return (
     <div id="service-plumbing" className="bg-slate-50 py-16 border-t border-slate-200">
-      <PageHeader title="Plumbing Contractor" breadcrumb="Services / Plumbing" bgImage={bgImg} />
+      <PageHeader title="Plumbing Contractor" breadcrumb="Services / Plumbing Contractor" bgImage={bgImg} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-7 space-y-4">

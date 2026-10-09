@@ -6,8 +6,8 @@ export default function SolarInverterService() {
   return (
     <div id="service-solar-inverter" className="bg-white py-16 border-t border-slate-200">
       <PageHeader 
-        title="Solar & Inverter Installations" 
-        breadcrumb="Services / Solar & Inverter" 
+        title="Solor And Inverter Installation Works" 
+        breadcrumb="Services / Solor And Inverter Installation Works" 
         bgImage={solarImg} 
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
